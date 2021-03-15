@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>taodd-server</artifactId>
+        <groupId>com.taodd</groupId>
+        <version>1.0.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <packaging>pom</packaging>
+    <version>1.0.0</version>
+    <groupId>com.taodd</groupId>
+    <artifactId>taodd-member-service</artifactId>
+    <name>taodd-member-service</name>
+    <description></description>
+
+    <modules>
+        <!--接口暴露-->
+        <module>member-api-log</module>
+        <module>member-api-center</module>
+        <module>member-api-order</module>
+        <module>member-api-external</module>
+        <module>member-api-interest</module>
+        <module>member-api-message</module>
+
+        <module>taodd-eureka-service-01</module>
+        <module>taodd-eureka-service-02</module>
+        <module>taodd-eureka-service-03</module>
+        <module>member-service-carousel</module>
+        <module>member-service-partner</module>
+        <module>member-service-rakeback</module>
+        <module>member-service-interest</module>
+        <module>member-service-center</module>
+        <module>member-service-log</module>
+        <module>member-service-order</module>
+        <module>member-service-message</module>
+        <module>member-service-deploy</module>
+        <module>member-service-monitor</module>
+        <module>member-service-customer</module>
+        <module>member-service-external</module>
+        <module>member-service-basic</module>
+
+
+    </modules>
+
+    <properties>
+        <taodd.assembly.version>1.0.0</taodd.assembly.version>
+    </properties>
+
+    <dependencyManagement>
+
+        <dependencies>
+
+            <dependency>
+                <groupId>com.taodd</groupId>
+                <artifactId>member-api-interest</artifactId>
+                <version>${taodd.assembly.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.taodd</groupId>
+                <artifactId>member-api-center</artifactId>
+                <version>${taodd.assembly.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.taodd</groupId>
+                <artifactId>member-api-log</artifactId>
+                <version>${taodd.assembly.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.taodd</groupId>
+                <artifactId>member-api-order</artifactId>
+                <version>${taodd.assembly.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.taodd</groupId>
+                <artifactId>member-api-message</artifactId>
+                <version>${taodd.assembly.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.taodd</groupId>
+                <artifactId>member-api-external</artifactId>
+                <version>${taodd.assembly.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.taodd</groupId>
+                <artifactId>member-service-monitor</artifactId>
+                <version>${taodd.assembly.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.taodd</groupId>
+                <artifactId>member-service-carousel</artifactId>
+                <version>${taodd.assembly.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.taodd</groupId>
+                <artifactId>member-service-center</artifactId>
+                <version>${taodd.assembly.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.taodd</groupId>
+                <artifactId>member-service-log</artifactId>
+                <version>${taodd.assembly.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.taodd</groupId>
+                <artifactId>member-service-order</artifactId>
+                <version>${taodd.assembly.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.taodd</groupId>
+                <artifactId>member-service-partner</artifactId>
+                <version>${taodd.assembly.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.taodd</groupId>
+                <artifactId>member-service-message</artifactId>
+                <version>${taodd.assembly.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.taodd</groupId>
+                <artifactId>member-service-rakeback</artifactId>
+                <version>${taodd.assembly.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.taodd</groupId>
+                <artifactId>member-service-customer</artifactId>
+                <version>${taodd.assembly.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.taodd</groupId>
+                <artifactId>member-service-external</artifactId>
+                <version>${taodd.assembly.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.taodd</groupId>
+                <artifactId>member-service-interest</artifactId>
+                <version>${taodd.assembly.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.taodd</groupId>
+                <artifactId>member-service-basic</artifactId>
+                <version>${taodd.assembly.version}</version>
+            </dependency>
+
+        </dependencies>
+
+
+    </dependencyManagement>
+
+</project>

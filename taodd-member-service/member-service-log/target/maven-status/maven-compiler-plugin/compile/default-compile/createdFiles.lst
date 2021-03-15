@@ -1,0 +1,17 @@
+com\esports\log\bean\db1\MemberLoginLog.class
+com\esports\log\web\MemberTradeLogAction.class
+com\esports\log\bean\db1\MemberTradeLog.class
+com\esports\log\dao\db1\MemberLogDao.class
+com\esports\log\service\MemberPlayGameLogManager.class
+com\esports\log\dao\db1\MemberLoginLogDao.class
+com\esports\log\bean\db1\MemberPlayGameLog.class
+com\esports\log\service\MemberTradeManager.class
+com\esports\log\dao\db1\MemberPlayGameLogDao.class
+com\esports\log\rpc\MemberLogRpcAction.class
+com\esports\log\bean\db1\MemberLog.class
+com\esports\log\dao\db1\MemberTradeLogDao.class
+com\esports\log\web\MemberLoginLogAction.class
+com\esports\log\dto\MemberTradeDto.class
+com\esports\log\web\MemberLogAction.class
+com\esports\log\service\MemberLoginLogManager.class
+com\esports\log\service\MemberLogManager.class

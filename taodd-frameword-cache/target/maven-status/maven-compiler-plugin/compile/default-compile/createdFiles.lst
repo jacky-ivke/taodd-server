@@ -1,0 +1,15 @@
+com\esports\cache\CustomCacheManager.class
+com\esports\cache\CacheConfig$EhCacheNames.class
+com\esports\cache\CacheConfig$EhRedisCacheNames.class
+com\esports\TaoddFrameworkCacheApplication.class
+com\esports\cache\CacheConfig$RedisCacheNames.class
+com\esports\cache\CacheConfig$CacheManagerNames.class
+com\esports\cache\CustomEhRedisCacheManager.class
+com\esports\cache\RedisUtil$2.class
+com\esports\cache\RedisUtil.class
+com\esports\cache\CustomEhRedisCache.class
+com\esports\cache\CustomRedisCacheManager.class
+com\esports\cache\CustomRedisCache.class
+com\esports\cache\RedisUtil$1.class
+com\esports\cache\CustomEhcacheCache.class
+com\esports\cache\CacheConfig.class

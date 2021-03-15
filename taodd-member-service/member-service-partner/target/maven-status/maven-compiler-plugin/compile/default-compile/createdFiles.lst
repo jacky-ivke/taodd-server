@@ -1,0 +1,15 @@
+com\esports\patner\dao\db1\PartnerOrderDao.class
+com\esports\patner\dto\PartnerCommissionDto.class
+com\esports\patner\service\PartnerManager$3.class
+com\esports\patner\dto\InviteSummaryDto.class
+com\esports\patner\service\PartnerManager$5.class
+com\esports\patner\dto\PartnerProfileDto.class
+com\esports\patner\dto\FriendsBetDto.class
+com\esports\patner\service\PartnerManager$4.class
+com\esports\patner\service\PartnerManager$1.class
+com\esports\patner\web\PartnerAction.class
+com\esports\patner\bean\db1\PartnerOrder.class
+com\esports\patner\dto\FriendDto.class
+com\esports\patner\dto\PartnerBillDto.class
+com\esports\patner\service\PartnerManager$2.class
+com\esports\patner\service\PartnerManager.class

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>taodd-agent-service</artifactId>
+        <groupId>com.taodd</groupId>
+        <version>1.0.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>agent-service-order</artifactId>
+
+    <dependencies>
+
+        <!--依赖模块-->
+        <dependency>
+            <groupId>com.taodd</groupId>
+            <artifactId>agent-api-log</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.taodd</groupId>
+            <artifactId>taodd-framework-service</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.taodd</groupId>
+            <artifactId>taodd-framework-cache</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.taodd</groupId>
+            <artifactId>taodd-framework-datasource</artifactId>
+        </dependency>
+
+    </dependencies>
+
+</project>

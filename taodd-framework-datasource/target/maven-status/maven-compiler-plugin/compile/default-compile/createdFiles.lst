@@ -1,0 +1,6 @@
+com\esports\db\TransactionManagerConfig.class
+com\esports\db\PrimaryDbConfig.class
+com\esports\db\SecondaryDbConfig.class
+com\esports\TaoddFrameworkDatasourceApplication.class
+META-INF\spring-configuration-metadata.json
+com\esports\db\DataSourceConfig.class

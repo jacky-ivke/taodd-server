@@ -1,0 +1,30 @@
+{
+  "groups": [
+    {
+      "name": "app.jwt",
+      "type": "com.esports.utils.JWT",
+      "sourceType": "com.esports.utils.JWT"
+    }
+  ],
+  "properties": [
+    {
+      "name": "app.jwt.expire",
+      "type": "java.lang.Long",
+      "description": "有效时间,单位(s)",
+      "sourceType": "com.esports.utils.JWT"
+    },
+    {
+      "name": "app.jwt.header",
+      "type": "java.lang.String",
+      "description": "用户凭证",
+      "sourceType": "com.esports.utils.JWT"
+    },
+    {
+      "name": "app.jwt.secret",
+      "type": "java.lang.String",
+      "description": "加密秘钥",
+      "sourceType": "com.esports.utils.JWT"
+    }
+  ],
+  "hints": []
+}

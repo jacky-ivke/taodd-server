@@ -1,0 +1,18 @@
+{
+  "groups": [
+    {
+      "name": "spring.datasource.primary",
+      "type": "javax.sql.DataSource",
+      "sourceType": "com.esports.db.DataSourceConfig",
+      "sourceMethod": "primaryDataSource()"
+    },
+    {
+      "name": "spring.datasource.secondary",
+      "type": "javax.sql.DataSource",
+      "sourceType": "com.esports.db.DataSourceConfig",
+      "sourceMethod": "secondaryDataSource()"
+    }
+  ],
+  "properties": [],
+  "hints": []
+}

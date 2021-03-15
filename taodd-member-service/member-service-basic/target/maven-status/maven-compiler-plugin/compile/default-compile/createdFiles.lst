@@ -1,0 +1,9 @@
+com\esports\basic\web\IpBlacklistAction.class
+com\esports\basic\web\AppVersionAction.class
+com\esports\basic\dao\db1\AppVersionDao.class
+com\esports\basic\bean\db1\AppVersion.class
+com\esports\basic\dto\AppVersionDto.class
+com\esports\basic\service\IpBlacklistManager.class
+com\esports\basic\bean\db1\IpBlacklist.class
+com\esports\basic\dao\db1\IpBlacklistDao.class
+com\esports\basic\service\AppVersionManager.class

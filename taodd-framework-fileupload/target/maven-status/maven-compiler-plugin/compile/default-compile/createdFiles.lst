@@ -1,0 +1,3 @@
+com\esports\upload\file\service\FileUploadManager.class
+com\esports\upload\file\web\FileUploadAction.class
+com\esports\upload\client\FastDFSClient.class

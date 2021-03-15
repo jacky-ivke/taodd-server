@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>taodd-server</artifactId>
+        <groupId>com.taodd</groupId>
+        <version>1.0.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <packaging>pom</packaging>
+    <version>1.0.0</version>
+    <groupId>com.taodd</groupId>
+    <artifactId>taodd-agent-service</artifactId>
+    <name>taodd-agent-service</name>
+    <description></description>
+
+    <modules>
+        <module>agent-service-center</module>
+        <module>agent-service-monitor</module>
+        <module>agent-service-deploy</module>
+        <module>agent-service-message</module>
+        <module>agent-service-log</module>
+        <module>agent-service-order</module>
+        <module>agent-api-center</module>
+        <module>agent-api-log</module>
+        <module>agent-api-order</module>
+        <module>agent-service-report</module>
+        <module>agent-api-message</module>
+        <module>agent-service-adjust</module>
+        <module>agent-service-transfer</module>
+        <module>agent-eureka-service-01</module>
+        <module>agent-eureka-service-02</module>
+        <module>agent-eureka-service-03</module>
+        <module>agent-service-external</module>
+        <module>agent-tx-service-01</module>
+    </modules>
+
+    <properties>
+        <taodd.assembly.version>1.0.0</taodd.assembly.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+
+            <dependency>
+                <groupId>com.taodd</groupId>
+                <artifactId>agent-api-log</artifactId>
+                <version>${taodd.assembly.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.taodd</groupId>
+                <artifactId>agent-api-order</artifactId>
+                <version>${taodd.assembly.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.taodd</groupId>
+                <artifactId>agent-api-center</artifactId>
+                <version>${taodd.assembly.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.taodd</groupId>
+                <artifactId>agent-api-message</artifactId>
+                <version>${taodd.assembly.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.taodd</groupId>
+                <artifactId>agent-service-adjust</artifactId>
+                <version>${taodd.assembly.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.taodd</groupId>
+                <artifactId>agent-service-center</artifactId>
+                <version>${taodd.assembly.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.taodd</groupId>
+                <artifactId>agent-service-external</artifactId>
+                <version>${taodd.assembly.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.taodd</groupId>
+                <artifactId>agent-service-log</artifactId>
+                <version>${taodd.assembly.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.taodd</groupId>
+                <artifactId>agent-service-message</artifactId>
+                <version>${taodd.assembly.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.taodd</groupId>
+                <artifactId>agent-service-monitor</artifactId>
+                <version>${taodd.assembly.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.taodd</groupId>
+                <artifactId>agent-service-order</artifactId>
+                <version>${taodd.assembly.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.taodd</groupId>
+                <artifactId>agent-service-report</artifactId>
+                <version>${taodd.assembly.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.taodd</groupId>
+                <artifactId>agent-service-transfer</artifactId>
+                <version>${taodd.assembly.version}</version>
+            </dependency>
+
+        </dependencies>
+
+    </dependencyManagement>
+
+</project>

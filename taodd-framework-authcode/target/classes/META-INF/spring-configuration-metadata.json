@@ -1,0 +1,102 @@
+{
+  "groups": [
+    {
+      "name": "email",
+      "type": "com.esports.com.esports.security.client.EmailClient",
+      "sourceType": "com.esports.com.esports.security.client.EmailClient"
+    },
+    {
+      "name": "sms",
+      "type": "com.esports.com.esports.security.client.SmsClient",
+      "sourceType": "com.esports.com.esports.security.client.SmsClient"
+    }
+  ],
+  "properties": [
+    {
+      "name": "email.expire",
+      "type": "java.lang.Long",
+      "sourceType": "com.esports.com.esports.security.client.EmailClient",
+      "defaultValue": 0
+    },
+    {
+      "name": "email.host",
+      "type": "java.lang.String",
+      "sourceType": "com.esports.com.esports.security.client.EmailClient"
+    },
+    {
+      "name": "email.message-text",
+      "type": "java.lang.String",
+      "sourceType": "com.esports.com.esports.security.client.EmailClient"
+    },
+    {
+      "name": "email.password",
+      "type": "java.lang.String",
+      "sourceType": "com.esports.com.esports.security.client.EmailClient"
+    },
+    {
+      "name": "email.prefix",
+      "type": "java.lang.String",
+      "sourceType": "com.esports.com.esports.security.client.EmailClient"
+    },
+    {
+      "name": "email.subject",
+      "type": "java.lang.String",
+      "sourceType": "com.esports.com.esports.security.client.EmailClient"
+    },
+    {
+      "name": "email.username",
+      "type": "java.lang.String",
+      "sourceType": "com.esports.com.esports.security.client.EmailClient"
+    },
+    {
+      "name": "sms.c-h-a-r-s-e-t",
+      "type": "java.lang.String",
+      "sourceType": "com.esports.com.esports.security.client.SmsClient",
+      "defaultValue": "GBK"
+    },
+    {
+      "name": "sms.daily-count",
+      "type": "java.lang.Integer",
+      "sourceType": "com.esports.com.esports.security.client.SmsClient",
+      "defaultValue": 0
+    },
+    {
+      "name": "sms.expire",
+      "type": "java.lang.Long",
+      "sourceType": "com.esports.com.esports.security.client.SmsClient",
+      "defaultValue": 0
+    },
+    {
+      "name": "sms.message",
+      "type": "java.lang.String",
+      "sourceType": "com.esports.com.esports.security.client.SmsClient"
+    },
+    {
+      "name": "sms.password",
+      "type": "java.lang.String",
+      "sourceType": "com.esports.com.esports.security.client.SmsClient"
+    },
+    {
+      "name": "sms.prefix",
+      "type": "java.lang.String",
+      "sourceType": "com.esports.com.esports.security.client.SmsClient"
+    },
+    {
+      "name": "sms.send-seconds",
+      "type": "java.lang.Integer",
+      "sourceType": "com.esports.com.esports.security.client.SmsClient",
+      "defaultValue": 0
+    },
+    {
+      "name": "sms.url",
+      "type": "java.lang.String",
+      "sourceType": "com.esports.com.esports.security.client.SmsClient"
+    },
+    {
+      "name": "sms.username",
+      "type": "java.lang.String",
+      "sourceType": "com.esports.com.esports.security.client.SmsClient"
+    }
+  ],
+  "hints": []
+}

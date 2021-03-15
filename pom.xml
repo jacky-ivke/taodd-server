@@ -1,0 +1,276 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <!--基本信息-->
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.taodd</groupId>
+    <artifactId>taodd-server</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.0</version>
+    <name>taodd-server</name>
+    <description></description>
+
+	<modules>
+        <module>taodd-frameword-cache</module>
+        <module>taodd-framework-fileupload</module>
+        <module>taodd-framework-authcode</module>
+        <module>taodd-framework-datasource</module>
+        <module>taodd-member-service</module>
+        <module>taodd-agent-service</module>
+        <module>taodd-framework-common</module>
+        <module>taodd-framework-api</module>
+        <module>taodd-framework-service</module>
+        <module>taodd-framework-tx</module>
+    </modules>
+
+    <!--定义属性值-->
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+        <spring.boot.version>2.2.2.RELEASE</spring.boot.version>
+        <spring.cloud.version>Hoxton.SR8</spring.cloud.version>
+        <taodd.framework.version>1.0.0</taodd.framework.version>
+        <spring.openfeign.version>2.1.1.RELEASE</spring.openfeign.version>
+        <fastjson.version>1.2.24</fastjson.version>
+        <net.sf.json.version>2.2.3</net.sf.json.version>
+        <fastdfs.version>1.27</fastdfs.version>
+        <fileupload.version>1.3.3</fileupload.version>
+        <ip2region.version>1.7.2</ip2region.version>
+        <swagger2.version>2.7.0</swagger2.version>
+        <persistence.version>1.0.2</persistence.version>
+        <druid.version>1.1.10</druid.version>
+        <ip2region.version>1.7.2</ip2region.version>
+        <servlet.api.version>2.5</servlet.api.version>
+        <jwt.version>0.9.1</jwt.version>
+        <txlcn.version>5.0.2.RELEASE</txlcn.version>
+        <xom.version>1.2.5</xom.version>
+    </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.lionsoul</groupId>
+            <artifactId>ip2region</artifactId>
+            <version>${ip2region.version}</version>
+        </dependency>
+
+
+    </dependencies>
+
+    <!-- 依赖声明 -->
+    <dependencyManagement>
+        <dependencies>
+
+            <!-- 核心组件依赖-->
+            <dependency>
+                <groupId>com.taodd</groupId>
+                <artifactId>taodd-framework-service</artifactId>
+                <version>${taodd.framework.version}</version>
+            </dependency>
+
+            <!-- 公共接口依赖-->
+            <dependency>
+                <groupId>com.taodd</groupId>
+                <artifactId>taodd-framework-api</artifactId>
+                <version>${taodd.framework.version}</version>
+            </dependency>
+
+
+            <!-- 公共组件依赖-->
+            <dependency>
+                <groupId>com.taodd</groupId>
+                <artifactId>taodd-framework-common</artifactId>
+                <version>${taodd.framework.version}</version>
+            </dependency>
+
+            <!-- 文件上传依赖-->
+            <dependency>
+                <groupId>com.taodd</groupId>
+                <artifactId>taodd-framework-fileupload</artifactId>
+                <version>${taodd.framework.version}</version>
+            </dependency>
+
+            <!-- 普通验证、短信验证、邮件验证依赖依赖-->
+            <dependency>
+                <groupId>com.taodd</groupId>
+                <artifactId>taodd-framework-authcode</artifactId>
+                <version>${taodd.framework.version}</version>
+            </dependency>
+
+            <!-- 缓存服务依赖-->
+            <dependency>
+                <groupId>com.taodd</groupId>
+                <artifactId>taodd-framework-cache</artifactId>
+                <version>${taodd.framework.version}</version>
+            </dependency>
+
+            <!-- 数据源服务依赖-->
+            <dependency>
+                <groupId>com.taodd</groupId>
+                <artifactId>taodd-framework-datasource</artifactId>
+                <version>${taodd.framework.version}</version>
+            </dependency>
+
+            <!-- SpringBoot的依赖配置-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring.boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring.cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-openfeign</artifactId>
+                <version>${spring.openfeign.version}</version>
+            </dependency>
+
+            <!-- fastdfs文件上传依赖配置-->
+            <dependency>
+                <groupId>com.github.penggle</groupId>
+                <artifactId>fastdfs-client-java</artifactId>
+                <version>${fastdfs.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>commons-fileupload</groupId>
+                <artifactId>commons-fileupload</artifactId>
+                <version>${fileupload.version}</version>
+            </dependency>
+
+            <!-- IP地址库-->
+            <dependency>
+                <groupId>org.lionsoul</groupId>
+                <artifactId>ip2region</artifactId>
+                <version>${ip2region.version}</version>
+            </dependency>
+
+            <!-- fastjson依赖-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>net.sf.json-lib</groupId>
+                <artifactId>json-lib</artifactId>
+                <classifier>jdk15</classifier>
+                <version>${net.sf.json.version}</version>
+            </dependency>
+
+            <!-- swagger2核心依赖 -->
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>${swagger2.version}</version>
+            </dependency>
+
+            <!-- swagger-ui为项目提供api展示及测试的界面 -->
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>${swagger2.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>javax.persistence</groupId>
+                <artifactId>persistence-api</artifactId>
+                <version>${persistence.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>servlet-api</artifactId>
+                <version>${servlet.api.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt</artifactId>
+                <version>${jwt.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.codingapi.txlcn</groupId>
+                <artifactId>txlcn-tc</artifactId>
+                <version>${txlcn.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.codingapi.txlcn</groupId>
+                <artifactId>txlcn-tm</artifactId>
+                <version>${txlcn.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.codingapi.txlcn</groupId>
+                <artifactId>txlcn-txmsg-netty</artifactId>
+                <version>${txlcn.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>xom</groupId>
+                <artifactId>xom</artifactId>
+                <version>${xom.version}</version>
+            </dependency>
+
+        </dependencies>
+
+    </dependencyManagement>
+
+    <!--编译管理 jdk版本和字符集编码-->
+    <build>
+
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                    <include>**/*.dat</include>
+                    <include>**/*.p12</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+            </resource>
+        </resources>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
